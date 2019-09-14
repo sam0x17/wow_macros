@@ -1,12 +1,22 @@
-// Type "Hello World" then press enter.
-var robot = require("robotjs");
+const robot = require('robotjs');
+const express = require('express');
+const app = express();
+const port = 8080;
 
-// Press enter.
-robot.keyTap("enter");
+function macro(command) {
+  console.log(`> ${command}`);
+  robot.keyTap('enter');
+  robot.typeString(command);
+  robot.keyTap('enter');
+}
 
-// Type "Hello World".
-robot.typeString("/s Hello World");
+function registerMacro(path, command) {
+  app.get(path, function(req, res) {
+    macro(command);
+    res.send('OK');
+  });
+}
 
-// Press enter.
-robot.keyTap("enter");
+registerMacro('/hello', '/s hello world!');
 
+app.listen(port, () => console.log(`wow macro mapper listening on http://localhost:${port}!`))
