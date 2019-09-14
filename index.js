@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const port = 8080;
 
-robot.setKeyboardDelay(5);
+robot.setKeyboardDelay(3);
 
 function macro(command) {
   console.log(`> ${command}`);
@@ -21,6 +21,6 @@ function registerMacro(path, command) {
   });
 }
 
-registerMacro('/hello', '/me dances around crazily bones creaking and cracking, eyes aglow!');
+registerMacro('/hello', '/me dances around crazily, bones creaking and cracking, eyes aglow!');
 
 app.listen(port, () => console.log(`wow macro mapper listening on http://localhost:${port}!`))
