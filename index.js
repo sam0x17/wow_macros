@@ -41,5 +41,9 @@ registerMacro('/pur', '/pur');
 registerMacro('/roar', '/roar');
 registerMacro('/slap', '/slap');
 registerMacro('/wink', '/wink');
+registerMacro('/growl', '/growl');
+registerMacro('/tickle', '/tickle');
+registerMacro('/wink', '/wink');
+
 
 app.listen(port, () => console.log(`wow macro mapper listening on http://localhost:${port}!`))
