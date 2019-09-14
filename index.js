@@ -7,7 +7,6 @@ robot.setKeyboardDelay(3);
 
 function macro(command) {
   console.log(`> ${command}`);
-  robot.keyTap('enter');
   for(var i = 0; i < command.length; i++) {
     robot.keyTap(command[i]);
   }
@@ -21,6 +20,25 @@ function registerMacro(path, command) {
   });
 }
 
-registerMacro('/hello', '/me dances around crazily, bones creaking and cracking, eyes aglow!');
+registerMacro('/amaze', '/amaze');
+registerMacro('/bye', '/bye');
+registerMacro('/drool', '/drool');
+registerMacro('/blow', '/blow');
+registerMacro('/hug', '/hug');
+registerMacro('/np', '/me says no problem!');
+registerMacro('/apologize', '/apologize');
+registerMacro('/trade', '/trade');
+registerMacro('/bark', '/bark');
+registerMacro('/flirt', '/flirt');
+registerMacro('/growl', '/growl');
+registerMacro('/grin', '/grin');
+registerMacro('/incoming', '/incoming');
+registerMacro('/sleep', '/sleep');
+registerMacro('/lol', '/lol');
+registerMacro('/moan', '/moan');
+registerMacro('/pur', '/pur');
+registerMacro('/roar', '/roar');
+registerMacro('/slap', '/slap');
+registerMacro('/wink', '/wink');
 
 app.listen(port, () => console.log(`wow macro mapper listening on http://localhost:${port}!`))
