@@ -3,10 +3,11 @@ const express = require('express');
 const app = express();
 const port = 8080;
 
-robot.setKeyboardDelay(3);
+robot.setKeyboardDelay(5);
 
 function macro(command) {
   console.log(`> ${command}`);
+  robot.keyTap('enter');
   for(var i = 0; i < command.length; i++) {
     robot.keyTap(command[i]);
   }
