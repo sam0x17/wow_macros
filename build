@@ -1,0 +1,5 @@
+#!/bin/bash
+mkdir -p ./bin || exit 1
+rm -rf ./bin/* || exit 1
+pkg -t darwin -o bin/wow_macros index.js || exit 1
+cp ./node_modules/robotjs/build/Release/robotjs.node ./bin/ || exit 1
