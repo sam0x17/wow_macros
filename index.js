@@ -26,7 +26,7 @@ registerMacro('/bye', '/bye');
 registerMacro('/drool', '/drool');
 registerMacro('/blow', '/blow');
 registerMacro('/hug', '/hug');
-registerMacro('/np', '/me says no problem!');
+registerMacro('/help', '/yell HELP!!!!!!');
 registerMacro('/apologize', '/apologize');
 registerMacro('/trade', '/trade');
 registerMacro('/bark', '/bark');
