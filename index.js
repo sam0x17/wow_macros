@@ -54,7 +54,6 @@ registerMacro('/oom-warning', '/me has low mana');
 registerMacro('/oom', '/yell (warning) out of mana!');
 registerMacro('/thank', '/thank');
 registerMacro('/bow', '/bow');
-registerMacro('/incoming', '/me says enemy incoming!');
 registerMacro('/yes', '/yes');
 registerMacro('/no', '/no');
 registerMacro('/train', '/train');
@@ -62,5 +61,7 @@ registerMacro('/sit', '/sit');
 registerMacro('/spit', '/spit');
 registerMacro('/dance', '/dance');
 registerMacro('/shake', '/shake');
+registerMacro('/beg', '/beg');
+registerMacro('/gasp', '/gasp');
 
 app.listen(port, () => console.log(`wow macro mapper listening on http://localhost:${port}!`))
